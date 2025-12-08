@@ -67,16 +67,16 @@ This document details the process to transform the raw ACS PUMS 2023 data into t
     * Original Action: The $\text{POVPIP}$ variable was initially included as is.
   
     * Correction (Feature Engineering - Fix for Multicollinearity):
-      * The interaction term ($\text{Is\_Immigrant}:\text{POVPIP}$) introduced severe multicollinearity ($\text{Condition\ No.}=2,030$).
+      * The interaction term `Is_Immigrant: POVPIP` introduced severe multicollinearity `Condition\ No.=2,030$.`
   
-      * To resolve this, $\text{POVPIP}$ was mean-centered (i.e., $\text{POVPIP}_c = \text{POVPIP} - \text{POVPIP}_{\text{mean}}$).
+      * To resolve this, `POVPIP` was mean-centered
   
-      * The final model uses this centered term ($\text{POVPIP}_c$) and the centered interaction term ($\text{Immigrant\_POVPIP\_c}$).
+      * The final model uses this centered term `POVPIP_c` and the centered interaction term `Immigrant_POVPIP_c`
 
     D. Added Barrier Variables ($\text{X}_3$, $\text{X}_4$): Language Barriers
 
     * Rationable: To improve explanatory power and isolate the specific barriers immigrants face, two key linguistic variables were added to the model.ed to the model.
 
-    * $\text{Limited\_English\_Household}$ (Source: $\text{LNGI}$): Binary dummy variable (1 = $\text{No\ one\ 14\ and\ over\ speaks\ English\ or\ speaks\ English\ 'very\ well'}$).
+    * `Limited_English_Household` (Source: `LNGI`): Binary dummy variable
 
-    * $\text{Speaks\_Other\_Language}$ (Source: $\text{LANX}$): Binary dummy variable (1 = $\text{Yes,\ speaks\ another\ language\ spoken\ at\ home}$).
+    * `Speaks_Other_Language` (Source: `LANX`) : Binary dummy variable

@@ -1,6 +1,6 @@
 # Data Analysis Results
 
-The model is reveals highly significant factors driving the differences in educational attainment ($\text{Years\_of\_Schooling}$) between immigrant and native populations.
+The model is reveals highly significant factors driving the differences in educational attainment `Years_of_Schooling` between immigrant and native populations.
 
 ## Key Findings
 

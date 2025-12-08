@@ -16,9 +16,7 @@ This analysis provides quantifiable, evidence-based insights to inform policy by
   
 * **Key Variables Used**: *SCHL* (Education), *NATIVITY* (Birth Status), *POVPIP* (Income Proxy), and *PWGTP* (Weight).
 
-Final Model Specification (WLS)The model was significantly enhanced from the initial concept to include two critical language barrier variables and a technique to ensure stability:
-
-$\text{Years of Schooling} = \beta_0 + \beta_1 (\text{Is\_Immigrant}) + \dots + \beta_5 (\text{Limited\_English\_Household}) + \epsilon$$
+Final Model Specification (WLS)The model was significantly enhanced from the initial concept to include two critical language barrier variables and a technique to ensure stability
 
 ## 🧹 Data Preparation and Feature Engineering
 
@@ -42,9 +40,9 @@ A. **Key Variables Added**
 
 The model's explanatory power was improved by adding two key linguistic variables:
 
-* $\text{Limited\_English\_Household}$: Binary variable identifying low English proficiency in the household.
+* `Limited_English_household`: Binary variable identifying low English proficiency in the household.
 
-* $\text{Speaks\_Other\_Language}$: Binary control for language spoken at home.
+* `Speaks_Other_Language`: Binary control for language spoken at home.
 
 B. **Statistical Stabilization**
 
